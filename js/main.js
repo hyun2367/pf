@@ -66,12 +66,14 @@ $(function(){
         $("#popup>.popup_main>.bg").fadeOut();
         $("#popup>.popup_main>#popup1").fadeOut();
         $("#popup>.popup_main>#popup1>button").fadeOut();
+        history.go(0);
     });
 
     $("#popup>.popup_main>#popup1>.popList>.popImg").on("click",function(){
         $("#popup>.popup_main>.bg").fadeOut();
         $("#popup>.popup_main>#popup1").fadeOut();
         $("#popup>.popup_main>#popup1>button").fadeOut();
+        history.go(0);
     });
 
     //=============================================etc_2==============================================
@@ -95,12 +97,14 @@ $(function(){
         $("#popup>.popup_main>.bg").fadeOut();
         $("#popup>.popup_main>#popup2").fadeOut();
         $("#popup>.popup_main>#popup2>button").fadeOut();
+        history.go(0);
     });
 
     $("#popup>.popup_main>#popup2>.popList>.popImg").on("click",function(){
         $("#popup>.popup_main>.bg").fadeOut();
         $("#popup>.popup_main>#popup2").fadeOut();
         $("#popup>.popup_main>#popup2>button").fadeOut();
+        history.go(0);
     });
 
     //=============================================etc_3==============================================
@@ -124,12 +128,14 @@ $(function(){
         $("#popup>.popup_main>.bg").fadeOut();
         $("#popup>.popup_main>#popup3").fadeOut();
         $("#popup>.popup_main>#popup3>button").fadeOut();
+        history.go(0);
     });
 
     $("#popup>.popup_main>#popup3>.popList>.popImg").on("click",function(){
         $("#popup>.popup_main>.bg").fadeOut();
         $("#popup>.popup_main>#popup3").fadeOut();
         $("#popup>.popup_main>#popup3>button").fadeOut();
+        history.go(0);
     });
 
     //=============================================etc_4==============================================
@@ -153,12 +159,14 @@ $(function(){
         $("#popup>.popup_main>.bg").fadeOut();
         $("#popup>.popup_main>#popup4").fadeOut();
         $("#popup>.popup_main>#popup4>button").fadeOut();
+        history.go(0);
     });
 
     $("#popup>.popup_main>#popup4>.popList>.popImg").on("click",function(){
         $("#popup>.popup_main>.bg").fadeOut();
         $("#popup>.popup_main>#popup4").fadeOut();
         $("#popup>.popup_main>#popup4>button").fadeOut();
+        history.go(0);
     });
 
     //=============================================etc_5==============================================
@@ -182,12 +190,14 @@ $(function(){
         $("#popup>.popup_main>.bg").fadeOut();
         $("#popup>.popup_main>#popup5").fadeOut();
         $("#popup>.popup_main>#popup5>button").fadeOut();
+        history.go(0);
     });
 
     $("#popup>.popup_main>#popup5>.popList>.popImg").on("click",function(){
         $("#popup>.popup_main>.bg").fadeOut();
         $("#popup>.popup_main>#popup5").fadeOut();
         $("#popup>.popup_main>#popup5>button").fadeOut();
+        history.go(0);
     });
 
 
@@ -244,7 +254,7 @@ $(function(){
         container = $(this).parent(".popup").find(".popList");
         max = container.children().length;
         container.addClass("margin-left","-800px");
-        container.append(container.children()[0]);
+        container.append(container.children()[max -1]);
         next();
     });
 
