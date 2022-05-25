@@ -28,14 +28,6 @@ $(function(){
         }
     });
 
-    
-     $(window).scroll(function(){
-        if($(this).scrollTop() > 1000){
-            $(".portfolio_main>dl>dd").fadeIn();
-        }else{
-            $(".portfolio_main>dl>dd").fadeOut();
-        }
-    });
 
 
 
